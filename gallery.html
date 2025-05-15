@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hardcore Berghof classes</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css_slider/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css_slider/style.css" />
+		<link rel="stylesheet" type="text/css" href="css_slider/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="stylesheets/style.css">
+
+<link rel="stylesheet" href="stylesheets/skins/blue.css">
+<!-- skin color -->
+<link rel="stylesheet" href="stylesheets/responsive.css">
+		<noscript>
+			<style>
+				/* .es-carousel ul{
+					display:block;
+				} */
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+    </head>
+    <body>
+<div class="row">
+	<div class="headerlogo four columns">
+		<div class="logo">
+			<a href="index.html">
+			<h4>Hardcore Berghof classes</h4>
+			</a>
+		</div>
+	</div>
+	<div class="headermenu eight columns noleftmarg">
+		<nav id="nav-wrap">
+		<ul id="main-menu" class="nav-bar sf-menu">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				Syllabus
+				<ul>
+					<li><a href="syllabus-link.html#linuxSyllabus"><strong>Linux</strong></a></li>
+					<li><a href="syllabus-link.html#hadoopSyllabus"><strong>Hadoop</strong></a></li>
+					<li><a href="syllabus-link.html#ccnaSyllabus"><strong>CCNA</strong></a></li>
+					<li><a href="syllabus-link.html#awsSyllabus"><strong>AWS (Amazon Web Services)</strong></a></li>
+										
+				</ul>
+			</li>
+			<li>
+				<a href="advanced-linux.html">Advanced Linux</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact Me</a>
+			</li>
+			<li>
+				<a href="gallery.html">Personal Gallery</a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+</div>		
+			<div class="content">
+				<h1> My Gallery <span>Here are some pictures of my travels around this beautiful world ! (47 Countries and counting)</span></h1>
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+								<!-- Austria !-->
+									<li><a href="#"><img src="images/Austria/1.jpg" data-large="images/Austria/1.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/2.jpg" data-large="images/Austria/2.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/3.jpg" data-large="images/Austria/3.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/4.jpg" data-large="images/Austria/4.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/5.jpg" data-large="images/Austria/5.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/6.jpg" data-large="images/Austria/6.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/7.jpg" data-large="images/Austria/7.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/8.jpg" data-large="images/Austria/8.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/9.jpg" data-large="images/Austria/9.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/10.jpg" data-large="images/Austria/10.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/11.jpg" data-large="images/Austria/11.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/12.jpg" data-large="images/Austria/12.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/13.jpg" data-large="images/Austria/13.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/14.jpg" data-large="images/Austria/14.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/15.jpg" data-large="images/Austria/15.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/16.jpg" data-large="images/Austria/16.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/17.jpg" data-large="images/Austria/17.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/18.jpg" data-large="images/Austria/18.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/19.jpg" data-large="images/Austria/19.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/20.jpg" data-large="images/Austria/20.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/21.jpg" data-large="images/Austria/21.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/22.jpg" data-large="images/Austria/22.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/23.jpg" data-large="images/Austria/23.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/24.jpg" data-large="images/Austria/24.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/25.jpg" data-large="images/Austria/25.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<li><a href="#"><img src="images/Austria/26.jpg" data-large="images/Austria/26.jpg" alt="image01" data-description="Trip to  Austria" /></a></li>
+									<!-- end Austria !-->
+									<!-- China !-->
+									<li><a href="#"><img src="images/China/1.jpg" data-large="images/China/1.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/2.jpg" data-large="images/China/2.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/3.jpg" data-large="images/China/3.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/4.jpg" data-large="images/China/4.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/5.jpg" data-large="images/China/5.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/6.jpg" data-large="images/China/6.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/7.jpg" data-large="images/China/7.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/8.jpg" data-large="images/China/8.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/9.jpg" data-large="images/China/9.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/10.jpg" data-large="images/China/10.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/11.jpg" data-large="images/China/11.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/12.jpg" data-large="images/China/12.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/13.jpg" data-large="images/China/13.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/14.jpg" data-large="images/China/14.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/15.jpg" data-large="images/China/15.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/16.jpg" data-large="images/China/16.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/17.jpg" data-large="images/China/17.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/18.jpg" data-large="images/China/18.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/19.jpg" data-large="images/China/19.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/20.jpg" data-large="images/China/20.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/21.jpg" data-large="images/China/21.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/22.jpg" data-large="images/China/22.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/23.jpg" data-large="images/China/23.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/24.jpg" data-large="images/China/24.jpg" alt="image01" data-description="Trip to  China" /></a></li>
+									<li><a href="#"><img src="images/China/25.jpg" data-large="images/China/25.jpg" alt="image01" data-description="Trip to  China" /></a></li>	
+									<!-- end China !-->
+									<!-- Finland !-->
+									<li><a href="#"><img src="images/Helsinki-Finland/1.jpg" data-large="images/Helsinki-Finland/1.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/2.jpg" data-large="images/Helsinki-Finland/2.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/3.jpg" data-large="images/Helsinki-Finland/3.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/4.jpg" data-large="images/Helsinki-Finland/4.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/5.jpg" data-large="images/Helsinki-Finland/5.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/6.jpg" data-large="images/Helsinki-Finland/6.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/7.jpg" data-large="images/Helsinki-Finland/7.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/8.jpg" data-large="images/Helsinki-Finland/8.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/9.jpg" data-large="images/Helsinki-Finland/9.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/10.jpg" data-large="images/Helsinki-Finland/10.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/11.jpg" data-large="images/Helsinki-Finland/11.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/12.jpg" data-large="images/Helsinki-Finland/12.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/13.jpg" data-large="images/Helsinki-Finland/13.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/14.jpg" data-large="images/Helsinki-Finland/14.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/15.jpg" data-large="images/Helsinki-Finland/15.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/16.jpg" data-large="images/Helsinki-Finland/16.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/17.jpg" data-large="images/Helsinki-Finland/17.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/18.jpg" data-large="images/Helsinki-Finland/18.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/19.jpg" data-large="images/Helsinki-Finland/19.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/20.jpg" data-large="images/Helsinki-Finland/20.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/21.jpg" data-large="images/Helsinki-Finland/21.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/22.jpg" data-large="images/Helsinki-Finland/22.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/23.jpg" data-large="images/Helsinki-Finland/23.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/24.jpg" data-large="images/Helsinki-Finland/24.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/25.jpg" data-large="images/Helsinki-Finland/25.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/26.jpg" data-large="images/Helsinki-Finland/26.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/27.jpg" data-large="images/Helsinki-Finland/27.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/28.jpg" data-large="images/Helsinki-Finland/28.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/29.jpg" data-large="images/Helsinki-Finland/29.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/30.jpg" data-large="images/Helsinki-Finland/30.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/31.jpg" data-large="images/Helsinki-Finland/31.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/32.jpg" data-large="images/Helsinki-Finland/32.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>
+									<li><a href="#"><img src="images/Helsinki-Finland/33.jpg" data-large="images/Helsinki-Finland/33.jpg" alt="image01" data-description="Trip to  Helsinki-Finland" /></a></li>				
+									<!-- end Finland !-->
+									<!-- Italy !-->
+									<li><a href="#"><img src="images/Italy/1.jpg" data-large="images/Italy/1.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/2.jpg" data-large="images/Italy/2.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/3.jpg" data-large="images/Italy/3.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/4.jpg" data-large="images/Italy/4.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/5.jpg" data-large="images/Italy/5.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/6.jpg" data-large="images/Italy/6.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/7.jpg" data-large="images/Italy/7.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/8.jpg" data-large="images/Italy/8.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/9.jpg" data-large="images/Italy/9.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/10.jpg" data-large="images/Italy/10.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>
+									<li><a href="#"><img src="images/Italy/11.jpg" data-large="images/Italy/11.jpg" alt="image01" data-description="Trip to  Italy" /></a></li>									
+									<!-- End Italy !-->
+									<!-- RedHat-England !-->
+																		<li><a href="#"><img src="images/England/1.jpg" data-large="images/England/1.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/2.jpg" data-large="images/England/2.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/3.jpg" data-large="images/England/3.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/4.jpg" data-large="images/England/4.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/5.jpg" data-large="images/England/5.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/6.jpg" data-large="images/England/6.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/7.jpg" data-large="images/England/7.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/8.jpg" data-large="images/England/8.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/9.jpg" data-large="images/England/9.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/10.jpg" data-large="images/England/10.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/11.jpg" data-large="images/England/11.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/12.jpg" data-large="images/England/12.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/13.jpg" data-large="images/England/13.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/14.jpg" data-large="images/England/14.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/15.jpg" data-large="images/England/15.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/16.jpg" data-large="images/England/16.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/17.jpg" data-large="images/England/17.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/18.jpg" data-large="images/England/18.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/19.jpg" data-large="images/England/19.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/20.jpg" data-large="images/England/20.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/21.jpg" data-large="images/England/21.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/22.jpg" data-large="images/England/22.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/23.jpg" data-large="images/England/23.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/24.jpg" data-large="images/England/24.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/25.jpg" data-large="images/England/25.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/26.jpg" data-large="images/England/26.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/27.jpg" data-large="images/England/27.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/28.jpg" data-large="images/England/28.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/29.jpg" data-large="images/England/29.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/30.jpg" data-large="images/England/30.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/31.jpg" data-large="images/England/31.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/32.jpg" data-large="images/England/32.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/33.jpg" data-large="images/England/33.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/34.jpg" data-large="images/England/34.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/35.jpg" data-large="images/England/35.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/36.jpg" data-large="images/England/36.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/37.jpg" data-large="images/England/37.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/38.jpg" data-large="images/England/38.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/39.jpg" data-large="images/England/39.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/40.jpg" data-large="images/England/40.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/41.jpg" data-large="images/England/41.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/42.jpg" data-large="images/England/42.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/43.jpg" data-large="images/England/43.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<li><a href="#"><img src="images/England/44.jpg" data-large="images/England/44.jpg" alt="image01" data-description="Trip to  England" /></a></li>
+									<!-- en England !-->
+									<!-- Singapore !-->
+									<li><a href="#"><img src="images/Singapore/1.jpg" data-large="images/Singapore/1.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/2.jpg" data-large="images/Singapore/2.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/3.jpg" data-large="images/Singapore/3.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/4.jpg" data-large="images/Singapore/4.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/5.jpg" data-large="images/Singapore/5.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/6.jpg" data-large="images/Singapore/6.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/7.jpg" data-large="images/Singapore/7.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/8.jpg" data-large="images/Singapore/8.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/9.jpg" data-large="images/Singapore/9.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/10.jpg" data-large="images/Singapore/10.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/11.jpg" data-large="images/Singapore/11.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/12.jpg" data-large="images/Singapore/12.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/13.jpg" data-large="images/Singapore/13.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/14.jpg" data-large="images/Singapore/14.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/15.jpg" data-large="images/Singapore/15.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/16.jpg" data-large="images/Singapore/16.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/17.jpg" data-large="images/Singapore/17.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/18.jpg" data-large="images/Singapore/18.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/19.jpg" data-large="images/Singapore/19.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/20.jpg" data-large="images/Singapore/20.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/21.jpg" data-large="images/Singapore/21.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/22.jpg" data-large="images/Singapore/22.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/23.jpg" data-large="images/Singapore/23.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/24.jpg" data-large="images/Singapore/24.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/25.jpg" data-large="images/Singapore/25.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/26.jpg" data-large="images/Singapore/26.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/27.jpg" data-large="images/Singapore/27.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/28.jpg" data-large="images/Singapore/28.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/29.jpg" data-large="images/Singapore/29.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/30.jpg" data-large="images/Singapore/30.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/31.jpg" data-large="images/Singapore/31.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/32.jpg" data-large="images/Singapore/32.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/33.jpg" data-large="images/Singapore/33.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/34.jpg" data-large="images/Singapore/34.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/35.jpg" data-large="images/Singapore/35.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/36.jpg" data-large="images/Singapore/36.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/37.jpg" data-large="images/Singapore/37.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/38.jpg" data-large="images/Singapore/38.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/39.jpg" data-large="images/Singapore/39.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/40.jpg" data-large="images/Singapore/40.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/41.jpg" data-large="images/Singapore/41.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/42.jpg" data-large="images/Singapore/42.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/43.jpg" data-large="images/Singapore/43.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/44.jpg" data-large="images/Singapore/44.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>
+									<li><a href="#"><img src="images/Singapore/45.jpg" data-large="images/Singapore/45.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>	
+									<li><a href="#"><img src="images/Singapore/46.jpg" data-large="images/Singapore/46.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>	
+									<li><a href="#"><img src="images/Singapore/47.jpg" data-large="images/Singapore/47.jpg" alt="image01" data-description="Trip to  Singapore" /></a></li>	
+									<!-- End Singapore !-->			
+									</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+			</div><!-- content -->
+		</div><!-- container -->
+<div id="footer">
+	<footer class="row">
+	<p class="back-top floatright">
+		<a href="#top"><span></span></a>
+	</p>
+	<div class="four columns">
+		<h1>ABOUT US</h1>
+		 Our goal is to help our students succeed.
+	</div>
+	<div class="four columns">
+		<h1>GET SOCIAL</h1>
+		<a class="social facebook" href="#"></a>
+		<a class="social twitter" href="#"></a>
+		<a class="social deviantart" href="#"></a>
+		<a class="social flickr" href="#"></a>
+		<a class="social dribbble" href="#"></a>
+	</div>
+
+	</footer>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js_slider/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js_slider/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js_slider/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js_slider/gallery.js"></script>
+    </body>
+</html>
