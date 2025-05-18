@@ -25,6 +25,44 @@
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <title>Linux Syllabus – RHEL 9.4</title>
+<style>
+    .innercontent{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height:1.5;
+        margin:0;
+        padding:2rem;
+        background:#fdfdfd;
+        color:#222;
+    }
+    h1, h2{
+        color:#c62828;
+        margin-top:1.2em;
+    }
+    h2{
+        border-bottom:2px solid #c62828;
+        padding-bottom:.25em;
+    }
+    details{
+        margin:0.75em 0;
+        border:1px solid #ccc;
+        border-radius:6px;
+        background:#fff;
+        padding:0.5em 1em;
+    }
+    summary{
+        cursor:pointer;
+        font-weight:600;
+    }
+    ul{
+        margin:0.4em 0 0 1.5em;
+    }
+    footer{
+        margin-top:3em;
+        font-size:.9em;
+        color:#555;
+    }
+</style>
 </head>
 <body>
 <!-- HIDDEN PANEL 
@@ -101,82 +139,225 @@
 </div>
 <!-- CONTENT 
 ================================================== -->
-<div class="row" style="text-align:center;position:relative;">
-    <!-- GOOGLE MAP IFRAME -->
+<div class="innercontent">
 	
- <div style="display:inline-block;margin:0 20px;width:30.3%;border:1px;min-width:350px;">
- <h3><font color="#990000">Backup Tools</font></h3>
- <h6>Amanda </h6> 
- <h6>Data Protector  </h6>
- <h6>And others as requested</h6>
- </div>
+<h1>Linux Syllabus – RHEL 9.4</h1>
+<p><strong>Date generated:</strong> 02 May 2025</p>
 
- <div style="display:inline-block;width:30.3%;min-width:350px;">
-  <h3><font color="#990000">Authentication and Authorization</font> </h3>
-  <h6>LDAP  </h6>
-  <h6>TACACS  </h6>
-  <h6>Advanced PAM  </h6>
- </div>
+<h2>Part I – Basic Linux Commands / Administration <span style="font-size:0.7em;">(16 lectures)</span></h2>
 
-<div style="display:inline-block;width:30.3%;min-width:350px;">
- <h3><font color="#990000"> Mail Servers </font></h3>
-<h6> Exim </h6>
-<h6> Postfix </h6>
-<h6> Zimbra </h6>
-<h6> Qmail </h6>
-<h6><b> Sendmail</b></h6>
-<p> &#8709;   Configuring Sendmail with Milters </p>
-<p> &#8709;   Configuring Spamassassin </p>
-<p> &#8709;   Configuring Procmail </p>
-<p> &#8709;   Configuring Fetchmail </p>
-<p> &#8709;   Configuring SquirrelMail </p>
-</div> 
+<details>
+<summary>Lecture 1 – Installation</summary>
+<ul>
+<li>Installation of Linux / Windows dual‑boot</li>
+<li>Building a Dual‑Boot System</li>
+<li>Installing RHEL 9.1 from a bootable pendrive</li>
+</ul>
+</details>
 
-<h3> <font color="#990000"> ORACLE Installation 11g R2 x64
- / Developer Client</font> </h3> 
+<details>
+<summary>Lecture 2 – Essential Commands</summary>
+<ul>
+<li>Listing files &amp; directories</li>
+<li>Working with files &amp; directories</li>
+<li>Date &amp; time commands</li>
+<li>Processes &amp; daemons</li>
+<li>Editors: <code>vi</code>, <code>nano</code>, <code>mcedit</code></li>
+</ul>
+</details>
 
-</h3>
-  <h6>SQL Basics</h6>
-  <h6>PL/SQL</h6>
-  <h6>Tuning ORACLE</h6>
- </div>
+<details>
+<summary>Lecture 3 – Storage &amp; Filesystems</summary>
+<ul>
+<li><code>df</code> – partitions &amp; filesystems</li>
+<li>Partition editors: <code>fdisk</code>, <code>parted</code></li>
+<li>Recommended partition layout (min / max)</li>
+<li>Symbolic &amp; hard links</li>
+<li>Hardware inventory: <code>dmesg</code>, <code>lspci -v</code></li>
+</ul>
+</details>
 
-  
-<div style="display:inline-block;margin:0 20px;width:30.3%;border:2px;min-width:350px;">
-<h3><font color="#990000"> Others </font></h3>
- <h6> Nagios Monitoring Tool </h6>
- <h6> RHEV Virtualization (Redhat Hyperviser Enterprise Virtualization) with Linux </h6>
- <h6> FreeBSD Virtualization (Hyperviser Enterprise Virtualization) with FreeBSD </h6>
- <h6> KVM Virtualization </h6>
- <h6> Advanced Kernel Tuning </h6>
- <h6> Advanced Shell Scripting </h6>
- <h6> Websphere </h6>
- <h6> Installation of Tomcat 6.0.18 with JDK </h6> 
- <h6> LTSP-PXE Remote Boot </h6> 
- <h6> Remote Booting Diskless Workstations from Linux Server (LTSP) </h6> 
- <h6> Tomcat Apache Load Balancing </h6> 
- <h6> iSCSI with multiple Hard Drives </h6> 
- <h6> File & Directory Security using ACLs </h6>
- <h6> Security with SELinux </h6> 
- <h6> John The Ripper <h6>
- <h6> Tleds,  Make your own man page [CV] </h6> 
- <h6> Kerberos, Installation of Oracle on Linux </h6> 
- <h6> OpenSSL, Parallel Computing </h6> 
- <h6> Distributed Computing </h6> 
- <h6> CVS - Concurrent Versioning System </h6> 
- <h6> Clustering with Linux </h6> 
-</div> 
+<details>
+<summary>Lecture 4 – Archiving &amp; Process Management</summary>
+<ul>
+<li>Archiving: <code>tar</code>; compression: <code>gzip</code>, <code>bzip2</code>, <code>xz</code></li>
+<li>Process status: <code>ps</code>, <code>top</code>, <code>htop</code>, <code>nice</code>, <code>renice</code></li>
+<li>Filesystem Hierarchy Standard (FHS)</li>
+<li>Permissions &amp; security bits (<code>rwx sSt</code>)</li>
+</ul>
+</details>
 
- 
-<div class="row">
-	<!-- CONTACT FORM -->
-	<div class="twelve columns">
-	</div>
-												
+<details>
+<summary>Lecture 5 – <code>systemd</code> Fundamentals</summary>
+<ul>
+<li>Managing services with <code>systemctl</code> (start, stop, enable, etc.)</li>
+<li>Listing units &amp; unit files</li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 6 – TCP/IP Networking</summary>
+<ul>
+<li>CLI configuration with <code>nmcli</code></li>
+<li>Curses UI: <code>nmtui</code></li>
+<li>GNOME network settings &amp; <code>nm-connection-editor</code></li>
+<li>Legacy files: <code>/etc/hosts</code>, <code>/etc/hostname</code>, ifcfg scripts</li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 7 – Troubleshooting &amp; Rescue Modes</summary>
+<ul>
+<li>Securing GRUB 2 with a password</li>
+<li>Single‑user mode (standard &amp; quick)</li>
+<li>Rescue &amp; emergency modes</li>
+<li>Recovering from the <code>grub&gt;</code> prompt</li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 8 – <code>fstab</code> &amp; Mounting</summary>
+<ul>
+<li>Device drivers: block vs character</li>
+<li>Working with removable media (<code>mount</code>, <code>umount</code>)</li>
+<li><code>fstab</code> options: LABEL, UUID, <code>defaults</code></li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 9 – Package Management</summary>
+<ul>
+<li>Installing software (RPM, source tarballs)</li>
+<li>Creating local repositories for <code>yum</code> / <code>dnf</code></li>
+<li>DNF command essentials</li>
+<li>Configuring the EPEL repository</li>
+</ul>
+</details>
+
+<details>
+<summary>Lectures 10‑12 – Shell Programming &amp; User Management</summary>
+<ul>
+<li>Shell scripting fundamentals (Parts 1 &amp; 2)</li>
+<li>User administration with <code>adduser</code> &amp; related tools</li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 13 – Samba Part 1 &amp; SELinux/AppArmor</summary>
+</details>
+
+<details>
+<summary>Lecture 14 – Samba Part 2</summary>
+</details>
+
+<details>
+<summary>Lecture 15 – Disk Quotas</summary>
+<ul>
+<li>Setting up user &amp; group quotas (<code>/etc/fstab</code>)</li>
+</ul>
+</details>
+
+<details>
+<summary>Lecture 16 – Job Scheduling</summary>
+<ul>
+<li><code>cron</code> &amp; <code>at</code> utilities</li>
+</ul>
+</details>
+
+<h2>Part II – Network Services <span style="font-size:0.7em;">(11 lectures)</span></h2>
+
+<details><summary>Lecture 17 – NFS &amp; AUTOMOUNT</summary></details>
+<details><summary>Lecture 18 – Telnet, FTP, Wireshark, OpenSSH, DHCP</summary></details>
+<details><summary>Lecture 19 – Apache Part 1</summary></details>
+<details><summary>Lecture 20 – Apache Part 2</summary></details>
+<details><summary>Lecture 21 – Apache Part 3</summary></details>
+<details><summary>Lecture 22 – DNS with BIND 9</summary></details>
+<details><summary>Lecture 23 – Kernel Updating &amp; Tuning</summary></details>
+<details><summary>Lecture 24 – Firewalling with <code>iptables</code> / <code>firewalld</code></summary></details>
+<details><summary>Lecture 25 – Proxy &amp; Caching with SQUID / Varnish</summary></details>
+<details><summary>Lecture 26 – Logical Volume Management (LVM 2)</summary></details>
+<details><summary>Lecture 27 – Mail Server (Zimbra / RHEL 9.4)</summary></details>
+
+<h2>Part III – Advanced Administration</h2>
+
+<details>
+<summary>I. Advanced System Administration Topics</summary>
+<ol>
+<li>Linux boot process (BIOS/MBR, UEFI‑GPT)</li>
+<li>Apache, Maven, Nginx</li>
+<li>C / C++ programming</li>
+<li>Agile &amp; Scrum methodology</li>
+<li>Ansible automation</li>
+<li>Generative AI: Gemini Pro, OpenAI, Llama, LangChain, Pinecone, vector DBs</li>
+<li>ChatGPT integration</li>
+<li>DevOps pipelines</li>
+<li>Django framework</li>
+<li>Docker containers</li>
+<li>Filesystems &amp; storage</li>
+<li>Hadoop ecosystem</li>
+<li>HTML &amp; web fundamentals</li>
+<li>Hydra configuration management</li>
+<li>Linux kernel internals</li>
+<li>Jenkins CI/CD</li>
+<li>Kubernetes orchestration</li>
+<li>Data Science (R programming, data structures, D3 visualisation)</li>
+<li>Deep learning &amp; neural networks / machine learning / NLP</li>
+<li>React + Redux; full‑stack development</li>
+<li>GitHub &amp; Eclipse IDE</li>
+<li>JavaScript</li>
+<li>CUPS printing system</li>
+<li>Bitbucket</li>
+<li>Databases: Oracle, MySQL, MongoDB, MariaDB</li>
+<li>LUKS disk encryption</li>
+<li>Python programming</li>
+<li>Puppet configuration mgmt</li>
+<li>SELinux security</li>
+<li>Advanced shell scripting</li>
+<li>SQL / PL‑SQL</li>
+<li>SSL / TLS fundamentals</li>
+<li>Storage: SAN vs NAS vs DAS vs iSCSI</li>
+<li>Networking: subnetting, supernets, VLANs, routing protocols</li>
+<li>TAILS live OS</li>
+<li>TensorFlow</li>
+<li>Projects – Rajiv Banerji</li>
+</ol>
+</details>
+
+<details>
+<summary>II. Advanced Network Administration Topics</summary>
+<ol>
+<li>ACLs (<code>getfacl</code>, <code>setfacl</code>)</li>
+<li>Cloud computing &amp; virtualisation</li>
+<li>Clustering &amp; high availability</li>
+<li>Containers</li>
+<li>Cryptography &amp; cybersecurity</li>
+<li>Firewall comparison: <code>iptables</code> vs <code>firewalld</code></li>
+<li>DNS deep dive</li>
+<li>CUPS printing system</li>
+<li>Bitbucket workflows</li>
+<li>Foreman + Katello server</li>
+<li>Identity management: FreeIPA, AppArmor, SELinux, Firejail</li>
+<li>iSCSI storage server</li>
+<li>KVM hypervisor</li>
+<li>LDAP directory services</li>
+<li>Monitoring with Prometheus &amp; Grafana</li>
+<li>Mail servers: Postfix, Sendmail, Zimbra</li>
+<li>Nagios monitoring</li>
+<li>Network security best practices</li>
+<li>OpenShift container platform</li>
+<li>OpenSSH hardening</li>
+<li>Postman &amp; Power BI</li>
+<li>RAID architectures</li>
+<li>Red Hat Satellite Server</li>
+<li>Rsync, <code>sar</code>, <code>sed</code>, <code>awk</code>, <code>tmux</code></li>
+<li>AWS &amp; Azure cloud engineering study guide</li>
+<li>Varnish cache &amp; load balancing</li>
+<li>Squid proxy</li>
+<li>VPN &amp; Tor networking</li>
+<li>XenServer</li>
+</ol>
+</details>
 </div>
-<div class="hr">
-</div>
-
 <!-- FOOOTER 
 ================================================== -->
 <div id="footer">
